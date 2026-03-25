@@ -127,12 +127,7 @@
 
 @media (max-width: 1366px) {
     
-    /* --- Navbar Adjustments --- */
-    .navbar {
-        width: 95%;              /* Give more breathing space than the 90% desktop width */
-        height: 55px;            /* Slightly shorter bar */
-        padding: 0 20px;
-    }
+
 
     .nav_icons {
         gap: 15px;               /* Tighter spacing for icons */
