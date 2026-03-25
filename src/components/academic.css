@@ -69,3 +69,59 @@
 #clg_des{
     color: rgba(255, 255, 255, 0.762);
 }
+
+@media (max-width: 439px) {
+
+  .A_main {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  #tittle {
+    font-size: 1.6rem;
+    margin: 1.5rem;
+    text-align: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;       /* ✅ important */
+    align-items: flex-start;
+    gap: 10px;                 /* spacing between line & text */
+    margin-bottom: 20px;
+  }
+
+  .line {
+    width: 3px;
+    margin-left: 30px;
+    min-height: 100px;         /* flexible height */
+  }
+
+  .dots {
+    width: 10px;
+    height: 10px;
+    top: 0.5rem;
+  }
+
+  .line_content {
+    width: 100%;               /* take remaining space */
+    margin-left: 10px;
+  }
+
+  /* text sizes */
+  #edu {
+    font-size: 1rem;
+  }
+
+  #instution {
+    font-size: 0.9rem;
+  }
+
+  #year,
+  #cgpa,
+  #clg_des {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    width: 90%;
+  }
+}

@@ -47,3 +47,124 @@
     transform: scale(1);
     color: aqua;
 }
+
+/* 🔥 Mobile */
+@media (max-width: 439px) {
+
+    .hero2 {
+        height: auto;          /* 🔥 important (avoid overflow) */
+        padding: 20px 10px;
+    }
+
+    #about {
+        font-size: 2rem;       /* smaller heading */
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .para {
+        width: 95%;            /* full width for mobile */
+        padding: 10px;
+    }
+
+    .p_text {
+        font-size: x-small;
+        line-height: 1.6;      /* better readability */
+        text-align: center;
+        text-align: left;
+    }
+}
+
+@media (min-width: 440px) and (max-width: 768px) {
+    
+    /* --- Navbar Tablet Styles --- */
+    .navbar {
+        width: 100%;             /* Full width for tablets */
+        border-radius: 0;        /* Remove rounded corners for a clean edge */
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        justify-content: space-between;
+        padding: 0 40px;         /* More side padding for tablet reach */
+    }
+
+    .nav_icons {
+        gap: 15px;
+        margin-top: 0;           /* Keep icons in the bar, not the bottom */
+    }
+
+    i {
+        font-size: 1.3rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+    }
+
+    /* --- Hero / About Tablet Styles --- */
+    .hero2 {
+        height: auto;            /* Flexible height for tablet vertical mode */
+        min-height: 80vh;
+        padding: 40px 0;
+    }
+
+    #about {
+        font-size: 3rem;         /* Slightly smaller than the 4rem desktop size */
+        text-align: left;
+        margin-left: 40px;       /* Align with the navbar padding */
+    }
+
+    .para {
+        width: 85%;              /* Wider text area than desktop (60%) */
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .p_text {
+        font-size: 1.1rem;       /* Slightly larger text for easier tablet reading */
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 1366px) {
+    
+    /* --- Navbar Adjustments --- */
+    .navbar {
+        width: 95%;              /* Give more breathing space than the 90% desktop width */
+        height: 55px;            /* Slightly shorter bar */
+        padding: 0 20px;
+    }
+
+    .nav_icons {
+        gap: 15px;               /* Tighter spacing for icons */
+    }
+
+    i {
+        font-size: 1.3rem;       /* Slightly smaller icons */
+    }
+
+    a {
+        font-size: 0.95rem;      /* Reduce text size slightly from desktop */
+    }
+
+    /* --- Hero / About Section Adjustments --- */
+    .hero2 {
+        height: auto;            /* Ensure it doesn't cut off if content is long */
+        min-height: 100vh;
+        padding: 40px 0;
+    }
+
+    #about {
+        font-size: 3.5rem;       /* Reduce from 4rem to fit better on 13" screens */
+        margin-left: 5%;         /* Align with the navbar's 95% width */
+    }
+
+    .para {
+        width: 75%;              /* Increase width (Desktop was 60%) so text isn't a thin column */
+        margin: 0 auto;
+    }
+
+    .p_text {
+        font-size: 1rem;         /* Standard readable size for laptops */
+        line-height: 1.7;        /* Comfortable leading */
+    }
+}

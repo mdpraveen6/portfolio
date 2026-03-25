@@ -43,7 +43,7 @@ function Hero() {
           </p>
         </div>
       </div>
-
+      
       <div className="hero_right">
         <div className="profile">
           <img src={img} alt="Profile" className="profile-pic" />

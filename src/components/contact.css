@@ -95,3 +95,56 @@
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(0, 242, 254, 0.6);
 }
+
+@media (max-width: 439px) {
+
+  .contact-container {
+    padding: 20px;
+    align-items: flex-start; /* better scroll behavior */
+  }
+
+  .contact-card {
+    width: 100%;
+    flex-direction: column; /* 🔥 stack layout */
+  }
+
+  /* 🔥 Top section */
+  .contact-left {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contact-left h2 {
+    font-size: 20px;
+  }
+
+  .contact-left p {
+    font-size: 12px;
+  }
+
+  .contact-info p {
+    font-size: 12px;
+  }
+
+  /* 🔥 Bottom form */
+  .contact-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .contact-right textarea {
+    height: 100px;
+  }
+
+  .contact-right button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
