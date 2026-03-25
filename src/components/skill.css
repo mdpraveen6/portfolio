@@ -77,3 +77,27 @@
   border-radius: 10px;
   transition: width 0.05s linear;
 }
+
+@media (max-width: 439px) {
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);  /* 🔥 2 cards side by side */
+    gap: 10px;  /* reduce gap for small screen */
+  }
+
+  .skill-card {
+    padding: 12px;   /* slightly smaller */
+  }
+
+  .skill-name {
+    font-size: 0.8rem;
+  }
+
+  .skill-percent {
+    font-size: 0.75rem;
+  }
+
+  .skill-bar {
+    height: 5px;
+  }
+}

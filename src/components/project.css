@@ -83,3 +83,48 @@
     background-color: #1e3a8a;
     border-color: #00d4ff;
 }
+
+@media (max-width: 439px) {
+
+  .projects_wrapper {
+    padding: 30px 10px;
+  }
+
+  .projects_header {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .projects_container {
+    grid-template-columns: repeat(2, 1fr); /* 🔥 2 cards */
+    gap: 10px;
+  }
+
+  .project_box {
+    padding: 15px;
+  }
+
+  .project_name {
+    font-size: 16px;
+  }
+
+  .project_text {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .lang_tag {
+    font-size: 11px;
+  }
+
+  .case_study_btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .accent_bar {
+    width: 30px;
+    height: 3px;
+  }
+}

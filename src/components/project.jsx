@@ -52,7 +52,7 @@ function Projects() {
                         with React and custom CSS animations.
                     </p>
                     <div className="project_footer">
-                        <button className="case_study_btn"><a href="http://localhost:3000/#Home" target="_blank" rel="noopener noreferrer" >Project</a></button>
+                        <button className="case_study_btn"><a href="https://mdpraveen6.github.io/portfolio/" target="_blank" rel="noopener noreferrer" >Project</a></button>
                     </div>
                 </div>
 

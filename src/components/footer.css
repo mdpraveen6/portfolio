@@ -26,3 +26,23 @@
     color: aliceblue;
 }
 
+@media (max-width: 439px) {
+
+  .end {
+    height: auto;            /* 🔥 remove fixed height */
+    padding: 20px 10px;
+    gap: 15px;               /* spacing between elements */
+  }
+
+  .getinfo {
+    width: 100%;             /* full width */
+    justify-content: space-evenly;
+    font-size: 1.3rem;       /* smaller icons/text */
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+}
+
