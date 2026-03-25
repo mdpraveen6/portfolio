@@ -31,7 +31,11 @@ function Hero() {
     <div className="content">
       <div className="hero_left">
         <div className="text">
-          <h2 id="Name"> {text}<span className="cursor">|</span> </h2>
+          <h2 id="Name">
+             {text}
+             
+            </h2>
+            <span className="cursor">|</span>
         </div>
         <div className="hero_para">
           <p className="about-text">

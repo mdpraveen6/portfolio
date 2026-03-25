@@ -34,23 +34,23 @@ function Navbar() {
       </div>
 
       <nav className={`navbar ${isOpen ? "active" : ""}`}>
-        <span>
+        <span className="nav_buttions">
           <NavHashLink smooth to="/#Home" onClick={() => setIsOpen(false)}>
             Home
           </NavHashLink>
         </span>
         
-        <span><Link to="/academic" onClick={() => setIsOpen(false)}>Academics</Link></span>
-        <span><Link to="/skill" onClick={() => setIsOpen(false)}>Skills</Link></span>
-        <span><Link to="/project" onClick={() => setIsOpen(false)}>Projects</Link></span>
+        <span><Link to="/academic" onClick={() => setIsOpen(false)} className="nav_buttions">Academics</Link></span>
+        <span><Link to="/skill" onClick={() => setIsOpen(false)} className="nav_buttions">Skills</Link></span>
+        <span><Link to="/project" onClick={() => setIsOpen(false)} className="nav_buttions">Projects</Link></span>
         
-        <span><NavHashLink smooth to="/#About" id="Nav_about" onClick={() => setIsOpen(false)}>About</NavHashLink></span>
-        <span><NavHashLink smooth to="/#Contact" onClick={() => setIsOpen(false)}>Contact Me</NavHashLink></span>
+        <span><NavHashLink smooth to="/#About" id="Nav_about" onClick={() => setIsOpen(false)} className="nav_buttions">About</NavHashLink></span>
+        <span><NavHashLink smooth to="/#Contact" onClick={() => setIsOpen(false)} className="nav_buttions">Contact Me</NavHashLink></span>
 
         <div className="nav_icons">
-          <span><a href="https://instagram.com" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a></span>
-          <span><a href="https://www.linkedin.com/in/praveen-md" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a></span>
-          <span><a href="https://mail.google.com/mail/..." target="_blank" rel="noreferrer"><i className="fa-solid fa-envelope"></i></a></span>
+          <span className="nav_buttions"><a href="https://instagram.com" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a></span>
+          <span className="nav_buttions"><a href="https://www.linkedin.com/in/praveen-md" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a></span>
+          <span className="nav_buttions"><a href="https://mail.google.com/mail/..." target="_blank" rel="noreferrer"><i className="fa-solid fa-envelope"></i></a></span>
         </div>
       </nav>
     </>
