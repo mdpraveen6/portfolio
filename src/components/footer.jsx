@@ -11,14 +11,12 @@ function Footer() {
           </a>
         </span>
         <span>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/praveen-md" target="_blank" rel="noreferrer">
             <i className="fa-brands fa-linkedin"></i>
           </a>
         </span>
         <span>
-          <a href="https://whatsapp.com" target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-whatsapp"></i>
-          </a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mdpraveen94@gmail.com&su=Mail from Portfolio" target="_blank" rel="noreferrer"><i className="fa-solid fa-envelope"></i></a>
         </span>
       </div>
       <div className="copyright">

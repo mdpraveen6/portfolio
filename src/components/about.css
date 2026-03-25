@@ -52,24 +52,24 @@
 @media (max-width: 439px) {
 
     .hero2 {
-        height: auto;          /* 🔥 important (avoid overflow) */
+        height: auto;          
         padding: 20px 10px;
     }
 
     #about {
-        font-size: 2rem;       /* smaller heading */
+        font-size: 2rem;       
         text-align: center;
         margin: 10px 0;
     }
 
     .para {
-        width: 95%;            /* full width for mobile */
+        width: 95%;          
         padding: 10px;
     }
 
     .p_text {
         font-size: x-small;
-        line-height: 1.6;      /* better readability */
+        line-height: 1.6;     
         text-align: center;
         text-align: left;
     }
@@ -78,25 +78,25 @@
 @media (min-width: 440px) and (max-width: 768px) {
     
     .hero2 {
-        height: auto;            /* Flexible height for tablet vertical mode */
+        height: auto;          
         min-height: 80vh;
         padding: 40px 0;
     }
 
     #about {
-        font-size: 3rem;         /* Slightly smaller than the 4rem desktop size */
+        font-size: 3rem;         
         text-align: left;
-        margin-left: 40px;       /* Align with the navbar padding */
+        margin-left: 40px;       
     }
 
     .para {
-        width: 85%;              /* Wider text area than desktop (60%) */
+        width: 85%;             
         margin: 0 auto;
         padding: 0 20px;
     }
 
     .p_text {
-        font-size: 1.1rem;       /* Slightly larger text for easier tablet reading */
+        font-size: 1.1rem;       
         line-height: 1.7;
     }
 }
@@ -105,25 +105,25 @@
     
 
 
-    /* --- Hero / About Section Adjustments --- */
+
     .hero2 {
-        height: auto;            /* Ensure it doesn't cut off if content is long */
+        height: auto;            
         min-height: 100vh;
         padding: 40px 0;
     }
 
     #about {
-        font-size: 3.5rem;       /* Reduce from 4rem to fit better on 13" screens */
-        margin-left: 5%;         /* Align with the navbar's 95% width */
+        font-size: 3.5rem;       
+        margin-left: 5%;        
     }
 
     .para {
-        width: 75%;              /* Increase width (Desktop was 60%) so text isn't a thin column */
+        width: 75%;              
         margin: 0 auto;
     }
 
     .p_text {
-        font-size: 1rem;         /* Standard readable size for laptops */
-        line-height: 1.7;        /* Comfortable leading */
+        font-size: 1rem;       
+        line-height: 1.7;       
     }
 }

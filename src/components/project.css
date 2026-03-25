@@ -68,7 +68,25 @@
     flex-grow: 1;
 }
 
-.case_study_btn {
+.project_footer{
+  font-size: smaller;
+  color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+}
+
+.code{
+    background-color: transparent;
+    border: 1px solid #1e3a8a;
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.link {
     background-color: transparent;
     border: 1px solid #1e3a8a;
     color: #ffffff;
@@ -97,7 +115,7 @@
   }
 
   .projects_container {
-    grid-template-columns: repeat(2, 1fr); /* 🔥 2 cards */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 10px;
   }
 

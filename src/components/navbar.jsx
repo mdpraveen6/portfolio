@@ -50,7 +50,7 @@ function Navbar() {
         <div className="nav_icons">
           <span className="nav_buttions"><a href="https://instagram.com" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a></span>
           <span className="nav_buttions"><a href="https://www.linkedin.com/in/praveen-md" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a></span>
-          <span className="nav_buttions"><a href="https://mail.google.com/mail/..." target="_blank" rel="noreferrer"><i className="fa-solid fa-envelope"></i></a></span>
+          <span className="nav_buttions"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=mdpraveen94@gmail.com&su=Mail from Portfolio" target="_blank" rel="noreferrer"><i className="fa-solid fa-envelope"></i></a></span>
         </div>
       </nav>
     </>

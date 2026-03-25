@@ -18,7 +18,7 @@
   box-shadow: 0 0 30px rgba(0, 242, 254, 0.2);
 }
 
-/* LEFT SIDE */
+
 .contact-left {
   width: 40%;
   padding: 40px;
@@ -45,7 +45,6 @@
   font-size: 14px;
 }
 
-/* RIGHT SIDE */
 .contact-right {
   width: 60%;
   padding: 40px;
@@ -100,15 +99,15 @@
 
   .contact-container {
     padding: 20px;
-    align-items: flex-start; /* better scroll behavior */
+    align-items: flex-start; 
   }
 
   .contact-card {
     width: 100%;
-    flex-direction: column; /* 🔥 stack layout */
+    flex-direction: column; 
   }
 
-  /* 🔥 Top section */
+
   .contact-left {
     width: 100%;
     padding: 20px;
@@ -127,7 +126,7 @@
     font-size: 12px;
   }
 
-  /* 🔥 Bottom form */
+ 
   .contact-right {
     width: 100%;
     padding: 20px;
