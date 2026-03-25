@@ -1,6 +1,6 @@
 import "./contact.css";
-
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -11,16 +11,29 @@ function Contact() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Message sent successfully!");
-    setFormData({ name: "", email: "", message: "" });
+
+    emailjs
+      .send(
+        "service_9y22r5n",    // from EmailJS dashboard
+        "template_hpwl6v3",   // from EmailJS dashboard
+        formData,
+        "ElFdMdBvh-3zJjli6"     // from EmailJS dashboard
+      )
+      .then(
+        (response) => {
+          alert("Message sent successfully!");
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          alert("Failed to send message. Try again later.");
+          console.log(error);
+        }
+      );
   };
 
   return (
@@ -34,7 +47,7 @@ function Contact() {
           </p>
 
           <div className="contact-info">
-            <p><strong>Email:</strong> yourmail@gmail.com</p>
+            <p><strong>Email:</strong> mdpraveen94@gmail.com</p>
             <p><strong>Location:</strong> India</p>
             <p><strong>Availability:</strong> Open for opportunities</p>
           </div>

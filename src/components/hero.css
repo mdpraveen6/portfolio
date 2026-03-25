@@ -1,21 +1,21 @@
-/* 1. Global Reset */
+
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Prevents padding from breaking width */
+    box-sizing: border-box; 
 }
 
 body {
     background-color: black;
-    font-family: sans-serif; /* Added a default font */
+    font-family: sans-serif;
 }
 
-/* 2. Base Mobile Styles (Mobile First Approach) */
+
 .content {
     width: 100%;
     min-height: 100vh;
     display: flex;
-    flex-direction: column-reverse; /* Profile on top, text below */
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -31,7 +31,7 @@ body {
 }
 
 .profile-pic {
-    max-width: 180px; /* Smaller for mobile */
+    max-width: 180px; 
     border-radius: 50%;
     border: 3px solid #00f2fe;
     box-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
@@ -42,7 +42,7 @@ body {
     background: linear-gradient(to right, #00f2fe, #4facfe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.2rem; /* Match this to your design */
+    font-size: 1.2rem; 
     font-weight: bold;
     display: inline;
 }
@@ -57,7 +57,7 @@ body {
 }
 @media (min-width: 439px) {
     .content {
-        flex-direction: column-reverse; /* Profile on top, text below */
+        flex-direction: column-reverse; 
         height: auto;
         min-height: 100vh;
         padding: 60px 20px;
@@ -70,7 +70,7 @@ body {
     }
 
     #Name {
-        font-size: 1.2rem; /* Scaled down for mobile */
+        font-size: 1.2rem;
     }
 
     .about-text {
@@ -85,7 +85,6 @@ body {
     }
 }
 
-/* 3. Tablet Styles (768px and up) */
 @media (min-width: 768px) {
     .content {
         padding: 40px;
@@ -104,18 +103,18 @@ body {
     }
 }
 
-/* 4. 13-inch Laptop Styles (1024px to 1280px) */
+
 @media (min-width: 1024px) {
     .content {
-        flex-direction: row; /* Side-by-side layout */
+        flex-direction: row; 
         text-align: left;
-        height: 100vh; /* Lock to screen height */
+        height: 100vh; 
         padding: 0 10%;
     }
 
     .hero_left {
         width: 60%;
-        align-items: flex-start; /* Align text to left */
+        align-items: flex-start; 
     }
 
     .hero_right {
@@ -132,7 +131,6 @@ body {
     }
 }
 
-/* 5. Desktop / Large Screens (1440px and up) */
 @media (min-width: 1440px) {
     #Name {
         font-size: 1.5rem;
@@ -148,7 +146,7 @@ body {
     }
 }
 
-/* Shared Animations & Utilities */
+
 .text {
     background: linear-gradient(to right, #00f2fe, #4facfe);
     -webkit-background-clip: text;
@@ -156,14 +154,12 @@ body {
 }
 
 .cursor {
-    color: #ff416c !important; /* Force RED */
-    -webkit-text-fill-color: #ff416c !important; /* Overrides the gradient if inherited */
-    font-size: 1.5rem; /* Match the height of your Name text */
+    color: #ff416c; 
+    -webkit-text-fill-color: #ff416c !important;
+    font-size: 1.5rem;
     font-weight: bold;
     display: inline;
     margin-left: 5px;
-    
-    /* The Blink Animation */
     animation: blink-animation 0.8s step-end infinite;
 }
 
