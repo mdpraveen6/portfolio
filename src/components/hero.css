@@ -39,11 +39,12 @@ body {
 }
 
 #Name {
-    font-size: 1.8rem;
-    font-weight: bold;
     background: linear-gradient(to right, #00f2fe, #4facfe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 1.2rem; /* Match this to your design */
+    font-weight: bold;
+    display: inline;
 }
 
 .about-text {
@@ -52,6 +53,36 @@ body {
     font-size: 14px;
     color: aliceblue;
     margin-top: 15px;
+    text-align: left;
+}
+@media (min-width: 439px) {
+    .content {
+        flex-direction: column-reverse; /* Profile on top, text below */
+        height: auto;
+        min-height: 100vh;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .hero_left, .hero_right {
+        width: 100%;
+        align-items: center;
+    }
+
+    #Name {
+        font-size: 1.2rem; /* Scaled down for mobile */
+    }
+
+    .about-text {
+        font-size: 14px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .profile-pic {
+        max-width: 200px;
+        margin-bottom: 30px;
+    }
 }
 
 /* 3. Tablet Styles (768px and up) */
@@ -61,7 +92,7 @@ body {
     }
     
     #Name {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .about-text {
@@ -104,7 +135,7 @@ body {
 /* 5. Desktop / Large Screens (1440px and up) */
 @media (min-width: 1440px) {
     #Name {
-        font-size: 3.5rem;
+        font-size: 1.5rem;
     }
 
     .profile-pic {
@@ -125,12 +156,19 @@ body {
 }
 
 .cursor {
-    color: #ff416c;
-    animation: blink 0.34s infinite;
+    color: #ff416c !important; /* Force RED */
+    -webkit-text-fill-color: #ff416c !important; /* Overrides the gradient if inherited */
+    font-size: 1.5rem; /* Match the height of your Name text */
     font-weight: bold;
+    display: inline;
+    margin-left: 5px;
+    
+    /* The Blink Animation */
+    animation: blink-animation 0.8s step-end infinite;
 }
 
-@keyframes blink {
+@keyframes blink-animation {
+    0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
 

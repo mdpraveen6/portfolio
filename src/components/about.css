@@ -77,30 +77,6 @@
 
 @media (min-width: 440px) and (max-width: 768px) {
     
-    /* --- Navbar Tablet Styles --- */
-    .navbar {
-        width: 100%;             /* Full width for tablets */
-        border-radius: 0;        /* Remove rounded corners for a clean edge */
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        justify-content: space-between;
-        padding: 0 40px;         /* More side padding for tablet reach */
-    }
-
-    .nav_icons {
-        gap: 15px;
-        margin-top: 0;           /* Keep icons in the bar, not the bottom */
-    }
-
-    i {
-        font-size: 1.3rem;
-    }
-
-    a {
-        font-size: 0.9rem;
-    }
-
-    /* --- Hero / About Tablet Styles --- */
     .hero2 {
         height: auto;            /* Flexible height for tablet vertical mode */
         min-height: 80vh;
@@ -128,18 +104,6 @@
 @media (max-width: 1366px) {
     
 
-
-    .nav_icons {
-        gap: 15px;               /* Tighter spacing for icons */
-    }
-
-    i {
-        font-size: 1.3rem;       /* Slightly smaller icons */
-    }
-
-    a {
-        font-size: 0.95rem;      /* Reduce text size slightly from desktop */
-    }
 
     /* --- Hero / About Section Adjustments --- */
     .hero2 {

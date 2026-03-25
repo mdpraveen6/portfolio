@@ -1,11 +1,13 @@
-.A_main{
+/* --- Desktop & Base Styles --- */
+.A_main {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh; /* Changed to min-height so it grows with content */
     background-color: #000000;
-    margin-bottom: 20%;
+    margin-bottom: 10%; /* Reduced for better spacing */
+    padding-bottom: 50px;
 }
 
-#tittle{
+#tittle {
     font-size: 2.8rem;
     font-weight: bold;
     color: #00f2fe;
@@ -14,114 +16,79 @@
     font-family: 'Inter', sans-serif;
 }
 
-.card{
+.card {
     width: 100%;
-    height: 35%;
+    min-height: 250px; /* Use min-height instead of fixed % */
     background-color: #000000;
     display: flex;
     flex-direction: row;
 }
 
-.line{
+.line {
     width: 0.2rem;
-    height: 33vh;
+    min-height: 250px; /* Match the card */
     margin-left: 20%;
     background-color: silver;
     display: flex;
     justify-content: center; 
     position: relative;
-    overflow: visible;
 }
 
-.dots{
+.dots {
     width: 17px;
     height: 17px;
-    border-radius: 15px;
+    border-radius: 50%;
     background-color: orangered;
-    display: block;
     position: absolute;
-    top: 0.8rem;
-    flex-shrink: 0;
+    top: 10px;
 }
 
-.line_content{
+.line_content {
     width: 60%;
-    height: 30vh;
-    margin-left: 2%;
+    padding: 0 0 40px 20px; /* Replaced margin-left with padding for better control */
 }
 
-#edu{
-    color: #4facfe;
+/* Text Styles */
+#edu { color: #4facfe; font-weight: bold; font-size: 1.2rem; }
+#instution { color: white; margin: 5px 0; }
+#year, #cgpa, #clg_des { 
+    color: rgba(255, 255, 255, 0.762); 
+    font-size: 1.2rem;
+    margin-bottom: 5px;
 }
 
-#instution{
-    color: white;
-}
+/* --- Responsive Breakpoints --- */
 
-#year{
-    color: rgba(255, 255, 255, 0.762);
-}
-
-#cgpa{
-    color: rgba(255, 255, 255, 0.762);
-}
-
-#clg_des{
-    color: rgba(255, 255, 255, 0.762);
-}
-
+/* 📱 Mobile (max-width: 439px) */
 @media (max-width: 439px) {
+    #tittle {
+        font-size: 1.8rem; /* Smaller title */
+        margin: 2rem 1.5rem;
+    }
 
-  .A_main {
-    height: auto;
-    padding-bottom: 20px;
-  }
+    .line {
+        margin-left: 10%; /* Move the line to the left to give text more space */
+    }
 
-  #tittle {
-    font-size: 1.6rem;
-    margin: 1.5rem;
-    text-align: center;
-  }
+    .line_content {
+        width: 85%; /* Use almost full width */
+    }
 
-  .card {
-    display: flex;
-    flex-direction: row;       /* ✅ important */
-    align-items: flex-start;
-    gap: 10px;                 /* spacing between line & text */
-    margin-bottom: 20px;
-  }
+    #edu {
+        font-size: 1rem;
+    }
 
-  .line {
-    width: 3px;
-    margin-left: 30px;
-    min-height: 100px;         /* flexible height */
-  }
+    #clg_des {
+        font-size: 0.85rem; /* Slightly smaller description */
+    }
+}
 
-  .dots {
-    width: 10px;
-    height: 10px;
-    top: 0.5rem;
-  }
-
-  .line_content {
-    width: 100%;               /* take remaining space */
-    margin-left: 10px;
-  }
-
-  /* text sizes */
-  #edu {
-    font-size: 1rem;
-  }
-
-  #instution {
-    font-size: 0.9rem;
-  }
-
-  #year,
-  #cgpa,
-  #clg_des {
-    font-size: 0.8rem;
-    line-height: 1.5;
-    width: 90%;
-  }
+/* 💻 13-inch Laptop & Tablet (Up to 1024px) */
+@media (max-width: 1024px) {
+    .line {
+        margin-left: 15%;
+    }
+    #tittle {
+        font-size: 2.2rem;
+    }
 }
